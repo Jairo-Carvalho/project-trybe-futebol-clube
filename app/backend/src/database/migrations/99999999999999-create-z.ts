@@ -1,9 +1,9 @@
-import { Model, QueryInterface, DataTypes } from 'sequelize';
-import IExample from '../../Interfaces/Example';
+import { Model, QueryInterface, DataTypes } from "sequelize";
+import IExample from "../../interfaces/Example";
 
 export default {
   up(queryInterface: QueryInterface) {
-    return queryInterface.createTable<Model<IExample>>('trybe_eval', {
+    return queryInterface.createTable<Model<IExample>>("trybe_eval", {
       id: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -13,6 +13,6 @@ export default {
     });
   },
   down(queryInterface: QueryInterface) {
-    return queryInterface.dropTable('trybe_eval');
+    return queryInterface.dropTable("trybe_eval");
   },
 };
