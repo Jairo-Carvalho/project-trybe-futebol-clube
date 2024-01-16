@@ -118,4 +118,5 @@ describe("Se, ao fazer uma requisição do tipo...", () => {
   it("verifica se placar de vitórias é igual ao numero de jogos", async function () {
 
   }
-});
+  )
+})
