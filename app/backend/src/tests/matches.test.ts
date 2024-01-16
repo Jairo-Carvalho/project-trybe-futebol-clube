@@ -115,4 +115,7 @@ describe("Se, ao fazer uma requisição do tipo...", () => {
     expect(status).to.equal(200);
     expect(body).to.deep.equal({ message: 'Placar Atualizado' });
   });
+  it("verifica se placar de vitórias é igual ao numero de jogos", async function () {
+
+  }
 });
