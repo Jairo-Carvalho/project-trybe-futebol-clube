@@ -21,9 +21,9 @@ export default class MatchService {
 
   public async getByProgress(progressParam: string): Promise<ServiceResponse<IMatch[]>> {
     const matchesInProgress = await this.matchModel.findByProgress(progressParam);
-    // if (!matchesInProgress) {
-    //   return { status: 'NOT_FOUND', data: { message: 'Not Found' } };
-    // }
+    /* if (!matchesInProgress) {
+      return { status: 'NOT_FOUND', data: { message: 'Not Found' } };
+    } */
     return { status: 'SUCCESSFUL', data: matchesInProgress };
   }
 
